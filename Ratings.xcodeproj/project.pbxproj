@@ -48,6 +48,7 @@
 		85326E291822063500414E02 /* PlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85326E281822063500414E02 /* PlayersViewController.m */; };
 		85326E2C182206D300414E02 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 85326E2B182206D300414E02 /* Player.m */; };
 		85326E2F182210AB00414E02 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 85326E2E182210AB00414E02 /* PlayerCell.m */; };
+		8585C1A418222DA600386110 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8585C1A318222DA600386110 /* PlayerDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,8 @@
 		85326E2B182206D300414E02 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		85326E2D182210AB00414E02 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
 		85326E2E182210AB00414E02 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		8585C1A218222DA600386110 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		8585C1A318222DA600386110 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +176,8 @@
 				85326DD01821FF2B00414E02 /* AppDelegate.h */,
 				85326DD11821FF2B00414E02 /* AppDelegate.m */,
 				85326DD31821FF2B00414E02 /* Main.storyboard */,
+				8585C1A218222DA600386110 /* PlayerDetailsViewController.h */,
+				8585C1A318222DA600386110 /* PlayerDetailsViewController.m */,
 				85326E2D182210AB00414E02 /* PlayerCell.h */,
 				85326E2E182210AB00414E02 /* PlayerCell.m */,
 				85326E271822063500414E02 /* PlayersViewController.h */,
@@ -375,6 +380,7 @@
 				85326DCE1821FF2B00414E02 /* main.m in Sources */,
 				85326E2F182210AB00414E02 /* PlayerCell.m in Sources */,
 				85326E2C182206D300414E02 /* Player.m in Sources */,
+				8585C1A418222DA600386110 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +589,7 @@
 				85326DF21821FF2B00414E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85326DF31821FF2B00414E02 /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +598,7 @@
 				85326DF51821FF2B00414E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
