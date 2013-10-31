@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="1178" y="227"/>
         </scene>
-        <!--Table View Controller - Root View Controller-->
+        <!--Player Details View Controller - Add Player-->
         <scene sceneID="IPJ-ri-KVL">
             <objects>
-                <tableViewController id="Exz-D7-cBI" sceneMemberID="viewController">
+                <tableViewController id="Exz-D7-cBI" customClass="PlayerDetailsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bX7-X4-FSb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,7 +100,18 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="r70-1F-dMb"/>
+                    <navigationItem key="navigationItem" title="Add Player" id="r70-1F-dMb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Trb-CX-NZ7">
+                            <connections>
+                                <action selector="cancel:" destination="Exz-D7-cBI" id="ZZh-Yh-bon"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="maF-Ht-a2C">
+                            <connections>
+                                <action selector="done:" destination="Exz-D7-cBI" id="8UG-ac-v88"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q54-5R-wU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -66,6 +66,16 @@
     return cell;
 }
 
+- (IBAction)cancel:(id)sender
+{
+    [self.delegate playerDetailsViewControllerDidCancel:self];
+}
+
+- (IBAction)done:(id)sender
+{
+    [self.delegate playerDetailsViewControllerDidCancel:self];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath

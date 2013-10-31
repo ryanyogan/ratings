@@ -42,6 +42,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UIKit called methods for segue's
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"AddPlayer"]) {
+        UINavigationController *navigationController = segue.destinationViewController;
+        PlayerDetailsViewController *playerDetailsViewController = [navigationController viewControllers][0];
+        playerDetailsViewController.delegate = self;
+    }
+}
+
+#pragma mark - PlayerDetailsViewControllerDelegate
+
+- (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)playerDetailsViewControllerDidSave:(PlayerDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - Table view data source
 
 - (UIImage *)imageForRating:(int)rating
